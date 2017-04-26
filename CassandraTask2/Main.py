@@ -16,21 +16,30 @@ session.execute("""
 session.set_keyspace(KEYSPACE)
 session.execute("create table movies(title text, director text, year text, EIDR text PRIMARY KEY)")
 
+
 def printSomething():
     print("Print Something")
-    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)", ('Schindlers list', 'Steven Spielberg', '1993', '1'))
-    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)", ('Inception', 'Chrisopher Nolan', '2010', '2'))
-    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)", ('Up', 'Pete Doctor', '2009', '3'))
+    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)",
+                    ('Schindlers list', 'Steven Spielberg', '1993', '1'))
+    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)",
+                    ('Inception', 'Chrisopher Nolan', '2010', '2'))
+    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)",
+                    ('Up', 'Pete Doctor', '2009', '3'))
+
 
 printSomething()
 
+
 def addMovie(title, director, year, EIDR):
     print("Add Movie")
-    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)", (title, director, year, EIDR))
+    session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)",
+                    (title, director, year, EIDR))
+
 
 def removeMovie(EIDR):
     print("Remove Movie")
     session.execute("DELETE FROM movies where EIDR = %s", EIDR)
+
 
 def editMovie(title, director, year, EIDR):
     print("Edit Movie")
@@ -38,65 +47,151 @@ def editMovie(title, director, year, EIDR):
     # print(ret.current_rows)
     # for item in ret:
     #     print (item.title)
-    session.execute("UPDATE movies SET title=%s, director=%s, year=%s where EIDR=%s IF EXISTS", (title, director, year, EIDR))
+    session.execute("UPDATE movies SET title=%s, director=%s, year=%s where EIDR=%s IF EXISTS",
+                    (title, director, year, EIDR))
+
 
 def searchMovieByTitle(title):
     print("Search by title")
     ret = session.execute("""SELECT * from streaming.movies where title=%s ALLOW FILTERING""", (title,))
     print(ret.current_rows)
 
+
 def searchMovieByDirector(director):
     print("Search by director")
     ret = session.execute("""SELECT * from streaming.movies where director=%s ALLOW FILTERING""", (director,))
     print(ret.current_rows)
+
 
 def searchMovieByYear(year):
     print("Search by year")
     ret = session.execute("""SELECT * from streaming.movies where year=%s ALLOW FILTERING""", (year,))
     print(ret.current_rows)
 
+
 def searchMovieByEIDR(EIDR):
     print("Search by EIDR")
     ret = session.execute("""SELECT * from streaming.movies where EIDR=%s ALLOW FILTERING""", (EIDR,))
     print(ret.current_rows)
 
+
+class Movie_Row:
+    """
+        Written by the man, the myth, the legend, Stephen Nicholas Trotta the Third
+    """
+
+    def __init__(self, row, sort_by='title'):
+        self.row = row
+        self.sort_column = sort_by
+
+    def __cmp__(self, other):
+        if 'title' == self.sort_column:
+            if self.row.title < other.get_title():
+                return -1
+            elif self.row.title == other.get_title():
+                return 0
+            else:
+                return 1
+        elif 'director' == self.sort_column:
+            if self.row.director < other.get_director():
+                return -1
+            elif self.row.director == other.get_director():
+                return 0
+            else:
+                return 1
+        elif 'year' == self.sort_column:
+            if self.row.year < other.get_year():
+                return -1
+            elif self.row.year == other.get_year():
+                return 0
+            else:
+                return 1
+        elif 'eidr' == self.sort_column:
+            if self.row.eidr < other.get_eidr():
+                return -1
+            elif self.row.eidr == other.get_eidr():
+                return 0
+            else:
+                return 1
+
+    def set_sort_column(self, new_column):
+        self.sort_column = new_column
+
+    def get_title(self):
+        return self.row.title
+
+    def get_director(self):
+        return self.row.director
+
+    def get_year(self):
+        return self.row.year
+
+    def get_eidr(self):
+        return self.row.eidr
+
+    def get_row(self):
+        return self.row
+
+
 def sortByTitle():
     print("Sort by title")
     ret = session.execute("""Select * from streaming.movies""")
-    print(ret.current_rows)
-
-    allData = ret.current_rows;
 
     allTitles = []
     for item in ret:
-        allTitles.append(item.title)
-    print(allTitles)
+        allTitles.append(Movie_Row(item, 'title'))
+
     sortedTitles = sorted(allTitles)
-    print(sortedTitles)
 
-    if not ret.current_rows:
-        print("hihi")
+    for item_obj in sortedTitles:
+        print str(item_obj.get_title()), str(item_obj.get_director()), str(item_obj.get_year())
 
-    print(len(ret.current_rows))
-    for item in ret.current_rows:
-        print("items")
-        print(item)
 
 def sortByDirector():
     print("Sort by title")
+    ret = session.execute("""Select * from streaming.movies""")
+
+    allTitles = []
+    for item in ret:
+        allTitles.append(Movie_Row(item, 'director'))
+
+    sortedTitles = sorted(allTitles)
+
+    for item_obj in sortedTitles:
+        print str(item_obj.get_title()), str(item_obj.get_director()), str(item_obj.get_year())
+
 
 def sortByYear():
     print("Sort by title")
+    ret = session.execute("""Select * from streaming.movies""")
+
+    allTitles = []
+    for item in ret:
+        allTitles.append(Movie_Row(item, 'year'))
+
+    sortedTitles = sorted(allTitles)
+
+    for item_obj in sortedTitles:
+        print str(item_obj.get_title()), str(item_obj.get_director()), str(item_obj.get_year())
+
 
 def sortByEIDR():
     print("Sort by title")
-    ret = session.execute("""Select * from streaming.movies ORDER BY EIDR ASC""")
-    print(ret.current_rows)
+    ret = session.execute("""Select * from streaming.movies""")
+
+    allTitles = []
+    for item in ret:
+        allTitles.append(Movie_Row(item, 'eidr'))
+
+    sortedTitles = sorted(allTitles)
+
+    for item_obj in sortedTitles:
+        print str(item_obj.get_title()), str(item_obj.get_director()), str(item_obj.get_year())
 
 
 while True:
     inp = raw_input('command?').lstrip().split(',')
-    i = 0;
+    i = 0
     for i in range(len(inp)):
         inp[i] = inp[i].strip()
     command = inp[0]
