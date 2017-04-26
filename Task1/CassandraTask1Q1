@@ -1,0 +1,36 @@
+CREATE SCHEMA songspace WITH replication = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 } and durable_writes = false;
+
+use songspace;
+
+CREATE TYPE genre(
+name text,
+characteristics text
+);
+
+CREATE TYPE album(
+name text,
+artist text,
+genre text
+);
+
+CREATE TABLE songs(
+id int PRIMARY KEY,
+Genre genre,
+Album album,
+Artist text,
+Song_Name text
+);
+
+INSERT INTO songs (id, Genre, Album, Artist, Song_Name) VALUES 
+(1, 
+{name: 'Fusion', characteristics:'jazz roots, complex rhythms, live performances'}, 
+{name: 'The Nightfly', artist: 'Donald Fagen', genre: 'Fusion'}, 
+'Donald Fagen', 
+'Ruby Baby');
+
+INSERT INTO songs (id, Genre, Album, Artist, Song_Name) VALUES 
+(2, 
+{name: 'Classic Rock', characteristics:'simple time signatures, exposed solos, prominent vocals'}, 
+{name: 'Mothership', artist: 'Led Zepplin', genre: 'Classic Rock'}, 
+'Led Zepplelin', 
+'No Quarter[remastered]');

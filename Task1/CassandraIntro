@@ -1,0 +1,17 @@
+create keyspace test WITH replication = {‘class’: ‘SimpleStrategy’, ‘replication_factor’: 3} and durable_writes = false;
+
+use test;
+
+create table user(
+user_id int PRIMARY KEY,
+user_phone text,
+user_email text
+);
+
+alter table user
+add <new_column> <type>;
+
+alter table user
+drop <existing_column> <type>;
+
+create index user_id_index on user(user_id);
