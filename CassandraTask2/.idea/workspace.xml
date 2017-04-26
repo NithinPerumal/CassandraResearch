@@ -10,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CassandraTask2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1493220127594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CassandraTask2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1493227812251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -18,19 +18,31 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="252">
+              <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <marker date="1493172140230" expanded="true" signature="375:453" ph="create table... movie" />
-                <marker date="1493172140230" expanded="true" signature="375:454" ph="create table... movie" />
-                <marker date="1493172140230" expanded="true" signature="375:456" ph="create table... movie" />
-                <marker date="1493172140230" expanded="true" signature="530:584" ph="insert into movie... " />
-                <marker date="1493172140230" expanded="true" signature="530:600" ph="insert into movie... " />
-                <marker date="1493172140230" expanded="true" signature="678:748" ph="insert into movie... " />
-                <marker date="1493172140230" expanded="true" signature="887:941" ph="insert into movie... " />
-                <marker date="1493172140230" expanded="true" signature="887:957" ph="insert into movie... " />
-                <marker date="1493172140230" expanded="true" signature="1062:1095" ph="DELETE FROM " />
+                <marker date="1493227834431" expanded="true" signature="375:454" ph="create table... movie" />
+                <marker date="1493227834431" expanded="true" signature="375:455" ph="create table... movie" />
+                <marker date="1493227834431" expanded="true" signature="375:457" ph="create table... movie" />
+                <marker date="1493227834431" expanded="true" signature="531:586" ph="insert into movie... " />
+                <marker date="1493227834431" expanded="true" signature="531:602" ph="insert into movie... " />
+                <marker date="1493227834431" expanded="true" signature="680:751" ph="insert into movie... " />
+                <marker date="1493227834431" expanded="true" signature="823:894" ph="insert into movies... " />
+                <marker date="1493227834431" expanded="true" signature="1039:1094" ph="insert into movie... " />
+                <marker date="1493227834431" expanded="true" signature="1039:1110" ph="insert into movie... " />
+                <marker date="1493227834431" expanded="true" signature="1215:1249" ph="DELETE FROM " />
+                <marker date="1493227834431" expanded="true" signature="1356:1416" ph="Select * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="1528:1590" ph="UPDATE movie... " />
+                <marker date="1493227834431" expanded="true" signature="1528:1600" ph="UPDATE movie... " />
+                <marker date="1493227834431" expanded="true" signature="1724:1769" ph="SELECT * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="1724:1785" ph="SELECT * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="1724:3237" ph="SELECT * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="1927:1991" ph="SELECT * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="2124:2184" ph="SELECT * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="2313:2373" ph="SELECT * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="2491:2521" ph="Select * fro... movies" />
+                <marker date="1493227834431" expanded="true" signature="3081:3129" ph="Select * fro... movies" />
               </folding>
             </state>
           </provider>
@@ -78,7 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -93,6 +104,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -292,6 +304,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1d5d173c-db3c-42ec-8b85-6b93a639c808" name="Default" comment="" />
@@ -306,11 +321,11 @@
     <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.035676252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05484558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942432" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -346,34 +361,89 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <marker date="1493172140230" expanded="true" signature="375:453" ph="create table... movie" />
-            <marker date="1493172140230" expanded="true" signature="375:454" ph="create table... movie" />
-            <marker date="1493172140230" expanded="true" signature="375:456" ph="create table... movie" />
-            <marker date="1493172140230" expanded="true" signature="530:584" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="530:600" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="678:748" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="887:941" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="887:957" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="1062:1095" ph="DELETE FROM " />
+            <marker date="1493227834431" expanded="true" signature="375:454" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="375:455" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="375:457" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="531:586" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="531:602" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="680:751" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="823:894" ph="insert into movies... " />
+            <marker date="1493227834431" expanded="true" signature="1039:1094" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="1039:1110" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="1215:1249" ph="DELETE FROM " />
+            <marker date="1493227834431" expanded="true" signature="1356:1416" ph="Select * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1528:1590" ph="UPDATE movie... " />
+            <marker date="1493227834431" expanded="true" signature="1528:1600" ph="UPDATE movie... " />
+            <marker date="1493227834431" expanded="true" signature="1724:1769" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1724:1785" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1724:3237" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1927:1991" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2124:2184" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2313:2373" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2491:2521" ph="Select * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="3081:3129" ph="Select * fro... movies" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <marker date="1493172140230" expanded="true" signature="375:453" ph="create table... movie" />
-            <marker date="1493172140230" expanded="true" signature="375:454" ph="create table... movie" />
-            <marker date="1493172140230" expanded="true" signature="375:456" ph="create table... movie" />
-            <marker date="1493172140230" expanded="true" signature="530:584" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="530:600" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="678:748" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="887:941" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="887:957" ph="insert into movie... " />
-            <marker date="1493172140230" expanded="true" signature="1062:1095" ph="DELETE FROM " />
+            <marker date="1493227834431" expanded="true" signature="375:454" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="375:455" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="375:457" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="531:586" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="531:602" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="680:751" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="823:894" ph="insert into movies... " />
+            <marker date="1493227834431" expanded="true" signature="1039:1094" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="1039:1110" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="1215:1249" ph="DELETE FROM " />
+            <marker date="1493227834431" expanded="true" signature="1356:1416" ph="Select * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1528:1590" ph="UPDATE movie... " />
+            <marker date="1493227834431" expanded="true" signature="1528:1600" ph="UPDATE movie... " />
+            <marker date="1493227834431" expanded="true" signature="1724:1769" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1724:1785" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1724:3237" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1927:1991" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2124:2184" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2313:2373" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2491:2521" ph="Select * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="3081:3129" ph="Select * fro... movies" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <marker date="1493227834431" expanded="true" signature="375:454" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="375:455" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="375:457" ph="create table... movie" />
+            <marker date="1493227834431" expanded="true" signature="531:586" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="531:602" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="680:751" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="823:894" ph="insert into movies... " />
+            <marker date="1493227834431" expanded="true" signature="1039:1094" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="1039:1110" ph="insert into movie... " />
+            <marker date="1493227834431" expanded="true" signature="1215:1249" ph="DELETE FROM " />
+            <marker date="1493227834431" expanded="true" signature="1356:1416" ph="Select * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1528:1590" ph="UPDATE movie... " />
+            <marker date="1493227834431" expanded="true" signature="1528:1600" ph="UPDATE movie... " />
+            <marker date="1493227834431" expanded="true" signature="1724:1769" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1724:1785" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1724:3237" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="1927:1991" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2124:2184" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2313:2373" ph="SELECT * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="2491:2521" ph="Select * fro... movies" />
+            <marker date="1493227834431" expanded="true" signature="3081:3129" ph="Select * fro... movies" />
           </folding>
         </state>
       </provider>
