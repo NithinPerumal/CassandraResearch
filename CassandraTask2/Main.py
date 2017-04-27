@@ -244,6 +244,8 @@ def addRentalData():
 
 addRentalData()
 
+# Rental Stuff
+
 def rentMovie(EIDR, duration):
     print("rent movie")
 
