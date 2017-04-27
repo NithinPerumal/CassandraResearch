@@ -5,6 +5,7 @@ cluster = Cluster()
 session = cluster.connect()
 
 KEYSPACE = 'streaming'
+IDENTIFIER = 1
 
 session.execute("drop keyspace if exists streaming")
 
@@ -225,6 +226,30 @@ def searchUserByPhone(phone):
     print("Search user by name")
     ret = session.execute("""SELECT * from streaming.users where phone='{0}' ALLOW FILTERING""".format(phone))
     print(ret.current_rows)
+
+def createStatusTable():
+    session.execute("""drop table if EXISTS status""")
+    session.execute("""create table status(identifier int PRIMARY KEY, username text, movie text, status text)""")
+
+createStatusTable()
+
+def identifierValue():
+    session.execute("""SELECT count(*) from streaming.status""")
+
+def addRentalData():
+    global IDENTIFIER
+    session.execute("insert into status(identifier, username, movie, status) VALUES (%s, %s, %s, %s)",
+                    (IDENTIFIER, 'peruman', 'Up', 'rent'))
+    IDENTIFIER = IDENTIFIER + 1
+
+addRentalData()
+
+def rentMovie(EIDR, duration):
+    print("rent movie")
+
+
+def buyMovie(EIDR):
+    print("buy movie")
 
 
 while True:

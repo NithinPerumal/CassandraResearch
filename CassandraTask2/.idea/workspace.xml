@@ -10,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CassandraTask2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1493269733996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CassandraTask2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1493270934959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -18,56 +18,68 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="308" column="33" lean-forward="false" selection-start-line="308" selection-start-column="33" selection-end-line="308" selection-end-column="33" />
+            <state relative-caret-position="386">
+              <caret line="247" column="23" lean-forward="true" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
-                <element signature="e#486#993#0" expanded="false" />
-                <element signature="e#1061#1225#0" expanded="false" />
-                <element signature="e#1255#1340#0" expanded="false" />
-                <element signature="e#1391#1737#0" expanded="false" />
-                <element signature="e#1976#2142#0" expanded="false" />
-                <element signature="e#2178#2332#0" expanded="false" />
-                <element signature="e#2368#2522#0" expanded="false" />
-                <element signature="e#2546#4100#0" expanded="false" />
-                <element signature="e#4126#4473#0" expanded="false" />
-                <element signature="e#4502#4852#0" expanded="false" />
-                <element signature="e#4877#5223#0" expanded="false" />
-                <element signature="e#5248#5594#0" expanded="false" />
-                <marker date="1493269770095" expanded="true" signature="375:454" ph="create table... movie" />
-                <marker date="1493269770095" expanded="true" signature="375:455" ph="create table... movie" />
-                <marker date="1493269770095" expanded="true" signature="375:457" ph="create table... movie" />
-                <marker date="1493269770095" expanded="true" signature="532:587" ph="insert into movie... " />
-                <marker date="1493269770095" expanded="true" signature="532:603" ph="insert into movie... " />
-                <marker date="1493269770095" expanded="true" signature="701:772" ph="insert into movie... " />
-                <marker date="1493269770095" expanded="true" signature="864:935" ph="insert into movies... " />
-                <marker date="1493269770095" expanded="true" signature="1101:1156" ph="insert into movie... " />
-                <marker date="1493269770095" expanded="true" signature="1101:1172" ph="insert into movie... " />
-                <marker date="1493269770095" expanded="true" signature="1298:1332" ph="DELETE FROM " />
-                <marker date="1493269770095" expanded="true" signature="1440:1500" ph="Select * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="1612:1674" ph="UPDATE movie... " />
-                <marker date="1493269770095" expanded="true" signature="1612:1684" ph="UPDATE movie... " />
-                <marker date="1493269770095" expanded="true" signature="1829:1874" ph="SELECT * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="1829:1890" ph="SELECT * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="1829:7320" ph="SELECT * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="2033:2097" ph="SELECT * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="2231:2291" ph="SELECT * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="2421:2481" ph="SELECT * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="4178:4208" ph="Select * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="4554:4584" ph="Select * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="4929:4959" ph="Select * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="5300:5330" ph="Select * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="5716:5742" ph="drop table i... " />
-                <marker date="1493269770095" expanded="true" signature="5766:5848" ph="create table... users" />
-                <marker date="1493269770095" expanded="true" signature="5894:5967" ph="insert into movies... " />
-                <marker date="1493269770095" expanded="true" signature="6138:6211" ph="insert into movies... " />
-                <marker date="1493269770095" expanded="true" signature="6343:6377" ph="DELETE FROM " />
-                <marker date="1493269770095" expanded="true" signature="6343:6378" ph="DELETE FROM " />
-                <marker date="1493269770095" expanded="true" signature="6343:6383" ph="DELETE FROM " />
-                <marker date="1493269770095" expanded="true" signature="6496:6582" ph="UPDATE users... " />
-                <marker date="1493269770095" expanded="true" signature="6715:6777" ph="SELECT * fro... movies" />
-                <marker date="1493269770095" expanded="true" signature="6926:6992" ph="SELECT * fro... users" />
-                <marker date="1493269770095" expanded="true" signature="7135:7198" ph="SELECT * fro... users" />
+                <element signature="e#501#1008#0" expanded="false" />
+                <element signature="e#1076#1240#0" expanded="false" />
+                <element signature="e#1270#1355#0" expanded="false" />
+                <element signature="e#1406#1752#0" expanded="false" />
+                <element signature="e#1991#2157#0" expanded="false" />
+                <element signature="e#2193#2347#0" expanded="false" />
+                <element signature="e#2383#2537#0" expanded="false" />
+                <element signature="e#2561#4115#0" expanded="false" />
+                <element signature="e#4141#4488#0" expanded="false" />
+                <element signature="e#4517#4867#0" expanded="false" />
+                <element signature="e#4892#5238#0" expanded="false" />
+                <element signature="e#5263#5609#0" expanded="false" />
+                <element signature="e#5892#6070#0" expanded="false" />
+                <element signature="e#6136#6282#0" expanded="false" />
+                <element signature="e#6314#6419#0" expanded="false" />
+                <element signature="e#6471#6638#0" expanded="false" />
+                <element signature="e#6672#6837#0" expanded="false" />
+                <element signature="e#6879#7056#0" expanded="false" />
+                <element signature="e#7092#7259#0" expanded="false" />
+                <marker date="1493271007599" expanded="true" signature="390:469" ph="create table... movie" />
+                <marker date="1493271007599" expanded="true" signature="390:470" ph="create table... movie" />
+                <marker date="1493271007599" expanded="true" signature="390:472" ph="create table... movie" />
+                <marker date="1493271007599" expanded="true" signature="547:602" ph="insert into movie... " />
+                <marker date="1493271007599" expanded="true" signature="547:618" ph="insert into movie... " />
+                <marker date="1493271007599" expanded="true" signature="716:787" ph="insert into movie... " />
+                <marker date="1493271007599" expanded="true" signature="879:950" ph="insert into movies... " />
+                <marker date="1493271007599" expanded="true" signature="1116:1171" ph="insert into movie... " />
+                <marker date="1493271007599" expanded="true" signature="1116:1187" ph="insert into movie... " />
+                <marker date="1493271007599" expanded="true" signature="1313:1347" ph="DELETE FROM " />
+                <marker date="1493271007599" expanded="true" signature="1455:1515" ph="Select * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="1627:1689" ph="UPDATE movie... " />
+                <marker date="1493271007599" expanded="true" signature="1627:1699" ph="UPDATE movie... " />
+                <marker date="1493271007599" expanded="true" signature="1844:1889" ph="SELECT * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="1844:1905" ph="SELECT * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="1844:7997" ph="SELECT * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="2048:2112" ph="SELECT * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="2246:2306" ph="SELECT * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="2436:2496" ph="SELECT * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="4193:4223" ph="Select * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="4569:4599" ph="Select * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="4944:4974" ph="Select * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="5315:5345" ph="Select * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="5731:5757" ph="drop table i... " />
+                <marker date="1493271007599" expanded="true" signature="5781:5863" ph="create table... users" />
+                <marker date="1493271007599" expanded="true" signature="5909:5982" ph="insert into movies... " />
+                <marker date="1493271007599" expanded="true" signature="6153:6226" ph="insert into movies... " />
+                <marker date="1493271007599" expanded="true" signature="6358:6392" ph="DELETE FROM " />
+                <marker date="1493271007599" expanded="true" signature="6358:6393" ph="DELETE FROM " />
+                <marker date="1493271007599" expanded="true" signature="6358:6398" ph="DELETE FROM " />
+                <marker date="1493271007599" expanded="true" signature="6511:6597" ph="UPDATE users... " />
+                <marker date="1493271007599" expanded="true" signature="6730:6792" ph="SELECT * fro... movies" />
+                <marker date="1493271007599" expanded="true" signature="6941:7007" ph="SELECT * fro... users" />
+                <marker date="1493271007599" expanded="true" signature="7150:7213" ph="SELECT * fro... users" />
+                <marker date="1493271007599" expanded="true" signature="7309:7336" ph="drop table i... " />
+                <marker date="1493271007599" expanded="true" signature="7364:7451" ph="create table... status" />
+                <marker date="1493271007599" expanded="true" signature="7524:7545" ph="SELECT count... sd" />
+                <marker date="1493271007599" expanded="true" signature="7524:7561" ph="SELECT count... status" />
+                <marker date="1493271007599" expanded="true" signature="7631:7710" ph="insert into status... " />
               </folding>
             </state>
           </provider>
@@ -393,52 +405,64 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <element signature="e#486#993#0" expanded="false" />
-            <element signature="e#1061#1225#0" expanded="false" />
-            <element signature="e#1255#1340#0" expanded="false" />
-            <element signature="e#1391#1737#0" expanded="false" />
-            <element signature="e#1976#2142#0" expanded="false" />
-            <element signature="e#2178#2332#0" expanded="false" />
-            <element signature="e#2368#2522#0" expanded="false" />
-            <element signature="e#2546#4100#0" expanded="false" />
-            <element signature="e#4126#4473#0" expanded="false" />
-            <element signature="e#4502#4852#0" expanded="false" />
-            <element signature="e#4877#5223#0" expanded="false" />
-            <element signature="e#5248#5594#0" expanded="false" />
-            <marker date="1493269770095" expanded="true" signature="375:454" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="375:455" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="375:457" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="532:587" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="532:603" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="701:772" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="864:935" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="1101:1156" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="1101:1172" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="1298:1332" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="1440:1500" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1612:1674" ph="UPDATE movie... " />
-            <marker date="1493269770095" expanded="true" signature="1612:1684" ph="UPDATE movie... " />
-            <marker date="1493269770095" expanded="true" signature="1829:1874" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1829:1890" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1829:7320" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2033:2097" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2231:2291" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2421:2481" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4178:4208" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4554:4584" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4929:4959" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="5300:5330" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="5716:5742" ph="drop table i... " />
-            <marker date="1493269770095" expanded="true" signature="5766:5848" ph="create table... users" />
-            <marker date="1493269770095" expanded="true" signature="5894:5967" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="6138:6211" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="6343:6377" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6343:6378" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6343:6383" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6496:6582" ph="UPDATE users... " />
-            <marker date="1493269770095" expanded="true" signature="6715:6777" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="6926:6992" ph="SELECT * fro... users" />
-            <marker date="1493269770095" expanded="true" signature="7135:7198" ph="SELECT * fro... users" />
+            <element signature="e#501#1008#0" expanded="false" />
+            <element signature="e#1076#1240#0" expanded="false" />
+            <element signature="e#1270#1355#0" expanded="false" />
+            <element signature="e#1406#1752#0" expanded="false" />
+            <element signature="e#1991#2157#0" expanded="false" />
+            <element signature="e#2193#2347#0" expanded="false" />
+            <element signature="e#2383#2537#0" expanded="false" />
+            <element signature="e#2561#4115#0" expanded="false" />
+            <element signature="e#4141#4488#0" expanded="false" />
+            <element signature="e#4517#4867#0" expanded="false" />
+            <element signature="e#4892#5238#0" expanded="false" />
+            <element signature="e#5263#5609#0" expanded="false" />
+            <element signature="e#5892#6070#0" expanded="false" />
+            <element signature="e#6136#6282#0" expanded="false" />
+            <element signature="e#6314#6419#0" expanded="false" />
+            <element signature="e#6471#6638#0" expanded="false" />
+            <element signature="e#6672#6837#0" expanded="false" />
+            <element signature="e#6879#7056#0" expanded="false" />
+            <element signature="e#7092#7259#0" expanded="false" />
+            <marker date="1493271007599" expanded="true" signature="390:469" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="390:470" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="390:472" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="547:602" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="547:618" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="716:787" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="879:950" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="1116:1171" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="1116:1187" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="1313:1347" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="1455:1515" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1627:1689" ph="UPDATE movie... " />
+            <marker date="1493271007599" expanded="true" signature="1627:1699" ph="UPDATE movie... " />
+            <marker date="1493271007599" expanded="true" signature="1844:1889" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1844:1905" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1844:7997" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2048:2112" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2246:2306" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2436:2496" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4193:4223" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4569:4599" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4944:4974" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="5315:5345" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="5731:5757" ph="drop table i... " />
+            <marker date="1493271007599" expanded="true" signature="5781:5863" ph="create table... users" />
+            <marker date="1493271007599" expanded="true" signature="5909:5982" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="6153:6226" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="6358:6392" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6358:6393" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6358:6398" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6511:6597" ph="UPDATE users... " />
+            <marker date="1493271007599" expanded="true" signature="6730:6792" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="6941:7007" ph="SELECT * fro... users" />
+            <marker date="1493271007599" expanded="true" signature="7150:7213" ph="SELECT * fro... users" />
+            <marker date="1493271007599" expanded="true" signature="7309:7336" ph="drop table i... " />
+            <marker date="1493271007599" expanded="true" signature="7364:7451" ph="create table... status" />
+            <marker date="1493271007599" expanded="true" signature="7524:7545" ph="SELECT count... sd" />
+            <marker date="1493271007599" expanded="true" signature="7524:7561" ph="SELECT count... status" />
+            <marker date="1493271007599" expanded="true" signature="7631:7710" ph="insert into status... " />
           </folding>
         </state>
       </provider>
@@ -449,108 +473,132 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <element signature="e#486#993#0" expanded="false" />
-            <element signature="e#1061#1225#0" expanded="false" />
-            <element signature="e#1255#1340#0" expanded="false" />
-            <element signature="e#1391#1737#0" expanded="false" />
-            <element signature="e#1976#2142#0" expanded="false" />
-            <element signature="e#2178#2332#0" expanded="false" />
-            <element signature="e#2368#2522#0" expanded="false" />
-            <element signature="e#2546#4100#0" expanded="false" />
-            <element signature="e#4126#4473#0" expanded="false" />
-            <element signature="e#4502#4852#0" expanded="false" />
-            <element signature="e#4877#5223#0" expanded="false" />
-            <element signature="e#5248#5594#0" expanded="false" />
-            <marker date="1493269770095" expanded="true" signature="375:454" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="375:455" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="375:457" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="532:587" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="532:603" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="701:772" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="864:935" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="1101:1156" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="1101:1172" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="1298:1332" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="1440:1500" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1612:1674" ph="UPDATE movie... " />
-            <marker date="1493269770095" expanded="true" signature="1612:1684" ph="UPDATE movie... " />
-            <marker date="1493269770095" expanded="true" signature="1829:1874" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1829:1890" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1829:7320" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2033:2097" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2231:2291" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2421:2481" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4178:4208" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4554:4584" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4929:4959" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="5300:5330" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="5716:5742" ph="drop table i... " />
-            <marker date="1493269770095" expanded="true" signature="5766:5848" ph="create table... users" />
-            <marker date="1493269770095" expanded="true" signature="5894:5967" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="6138:6211" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="6343:6377" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6343:6378" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6343:6383" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6496:6582" ph="UPDATE users... " />
-            <marker date="1493269770095" expanded="true" signature="6715:6777" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="6926:6992" ph="SELECT * fro... users" />
-            <marker date="1493269770095" expanded="true" signature="7135:7198" ph="SELECT * fro... users" />
+            <element signature="e#501#1008#0" expanded="false" />
+            <element signature="e#1076#1240#0" expanded="false" />
+            <element signature="e#1270#1355#0" expanded="false" />
+            <element signature="e#1406#1752#0" expanded="false" />
+            <element signature="e#1991#2157#0" expanded="false" />
+            <element signature="e#2193#2347#0" expanded="false" />
+            <element signature="e#2383#2537#0" expanded="false" />
+            <element signature="e#2561#4115#0" expanded="false" />
+            <element signature="e#4141#4488#0" expanded="false" />
+            <element signature="e#4517#4867#0" expanded="false" />
+            <element signature="e#4892#5238#0" expanded="false" />
+            <element signature="e#5263#5609#0" expanded="false" />
+            <element signature="e#5892#6070#0" expanded="false" />
+            <element signature="e#6136#6282#0" expanded="false" />
+            <element signature="e#6314#6419#0" expanded="false" />
+            <element signature="e#6471#6638#0" expanded="false" />
+            <element signature="e#6672#6837#0" expanded="false" />
+            <element signature="e#6879#7056#0" expanded="false" />
+            <element signature="e#7092#7259#0" expanded="false" />
+            <marker date="1493271007599" expanded="true" signature="390:469" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="390:470" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="390:472" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="547:602" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="547:618" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="716:787" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="879:950" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="1116:1171" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="1116:1187" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="1313:1347" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="1455:1515" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1627:1689" ph="UPDATE movie... " />
+            <marker date="1493271007599" expanded="true" signature="1627:1699" ph="UPDATE movie... " />
+            <marker date="1493271007599" expanded="true" signature="1844:1889" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1844:1905" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1844:7997" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2048:2112" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2246:2306" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2436:2496" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4193:4223" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4569:4599" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4944:4974" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="5315:5345" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="5731:5757" ph="drop table i... " />
+            <marker date="1493271007599" expanded="true" signature="5781:5863" ph="create table... users" />
+            <marker date="1493271007599" expanded="true" signature="5909:5982" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="6153:6226" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="6358:6392" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6358:6393" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6358:6398" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6511:6597" ph="UPDATE users... " />
+            <marker date="1493271007599" expanded="true" signature="6730:6792" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="6941:7007" ph="SELECT * fro... users" />
+            <marker date="1493271007599" expanded="true" signature="7150:7213" ph="SELECT * fro... users" />
+            <marker date="1493271007599" expanded="true" signature="7309:7336" ph="drop table i... " />
+            <marker date="1493271007599" expanded="true" signature="7364:7451" ph="create table... status" />
+            <marker date="1493271007599" expanded="true" signature="7524:7545" ph="SELECT count... sd" />
+            <marker date="1493271007599" expanded="true" signature="7524:7561" ph="SELECT count... status" />
+            <marker date="1493271007599" expanded="true" signature="7631:7710" ph="insert into status... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="308" column="33" lean-forward="false" selection-start-line="308" selection-start-column="33" selection-end-line="308" selection-end-column="33" />
+        <state relative-caret-position="386">
+          <caret line="247" column="23" lean-forward="true" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-            <element signature="e#486#993#0" expanded="false" />
-            <element signature="e#1061#1225#0" expanded="false" />
-            <element signature="e#1255#1340#0" expanded="false" />
-            <element signature="e#1391#1737#0" expanded="false" />
-            <element signature="e#1976#2142#0" expanded="false" />
-            <element signature="e#2178#2332#0" expanded="false" />
-            <element signature="e#2368#2522#0" expanded="false" />
-            <element signature="e#2546#4100#0" expanded="false" />
-            <element signature="e#4126#4473#0" expanded="false" />
-            <element signature="e#4502#4852#0" expanded="false" />
-            <element signature="e#4877#5223#0" expanded="false" />
-            <element signature="e#5248#5594#0" expanded="false" />
-            <marker date="1493269770095" expanded="true" signature="375:454" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="375:455" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="375:457" ph="create table... movie" />
-            <marker date="1493269770095" expanded="true" signature="532:587" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="532:603" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="701:772" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="864:935" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="1101:1156" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="1101:1172" ph="insert into movie... " />
-            <marker date="1493269770095" expanded="true" signature="1298:1332" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="1440:1500" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1612:1674" ph="UPDATE movie... " />
-            <marker date="1493269770095" expanded="true" signature="1612:1684" ph="UPDATE movie... " />
-            <marker date="1493269770095" expanded="true" signature="1829:1874" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1829:1890" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="1829:7320" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2033:2097" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2231:2291" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="2421:2481" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4178:4208" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4554:4584" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="4929:4959" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="5300:5330" ph="Select * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="5716:5742" ph="drop table i... " />
-            <marker date="1493269770095" expanded="true" signature="5766:5848" ph="create table... users" />
-            <marker date="1493269770095" expanded="true" signature="5894:5967" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="6138:6211" ph="insert into movies... " />
-            <marker date="1493269770095" expanded="true" signature="6343:6377" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6343:6378" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6343:6383" ph="DELETE FROM " />
-            <marker date="1493269770095" expanded="true" signature="6496:6582" ph="UPDATE users... " />
-            <marker date="1493269770095" expanded="true" signature="6715:6777" ph="SELECT * fro... movies" />
-            <marker date="1493269770095" expanded="true" signature="6926:6992" ph="SELECT * fro... users" />
-            <marker date="1493269770095" expanded="true" signature="7135:7198" ph="SELECT * fro... users" />
+            <element signature="e#501#1008#0" expanded="false" />
+            <element signature="e#1076#1240#0" expanded="false" />
+            <element signature="e#1270#1355#0" expanded="false" />
+            <element signature="e#1406#1752#0" expanded="false" />
+            <element signature="e#1991#2157#0" expanded="false" />
+            <element signature="e#2193#2347#0" expanded="false" />
+            <element signature="e#2383#2537#0" expanded="false" />
+            <element signature="e#2561#4115#0" expanded="false" />
+            <element signature="e#4141#4488#0" expanded="false" />
+            <element signature="e#4517#4867#0" expanded="false" />
+            <element signature="e#4892#5238#0" expanded="false" />
+            <element signature="e#5263#5609#0" expanded="false" />
+            <element signature="e#5892#6070#0" expanded="false" />
+            <element signature="e#6136#6282#0" expanded="false" />
+            <element signature="e#6314#6419#0" expanded="false" />
+            <element signature="e#6471#6638#0" expanded="false" />
+            <element signature="e#6672#6837#0" expanded="false" />
+            <element signature="e#6879#7056#0" expanded="false" />
+            <element signature="e#7092#7259#0" expanded="false" />
+            <marker date="1493271007599" expanded="true" signature="390:469" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="390:470" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="390:472" ph="create table... movie" />
+            <marker date="1493271007599" expanded="true" signature="547:602" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="547:618" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="716:787" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="879:950" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="1116:1171" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="1116:1187" ph="insert into movie... " />
+            <marker date="1493271007599" expanded="true" signature="1313:1347" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="1455:1515" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1627:1689" ph="UPDATE movie... " />
+            <marker date="1493271007599" expanded="true" signature="1627:1699" ph="UPDATE movie... " />
+            <marker date="1493271007599" expanded="true" signature="1844:1889" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1844:1905" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="1844:7997" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2048:2112" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2246:2306" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="2436:2496" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4193:4223" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4569:4599" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="4944:4974" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="5315:5345" ph="Select * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="5731:5757" ph="drop table i... " />
+            <marker date="1493271007599" expanded="true" signature="5781:5863" ph="create table... users" />
+            <marker date="1493271007599" expanded="true" signature="5909:5982" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="6153:6226" ph="insert into movies... " />
+            <marker date="1493271007599" expanded="true" signature="6358:6392" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6358:6393" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6358:6398" ph="DELETE FROM " />
+            <marker date="1493271007599" expanded="true" signature="6511:6597" ph="UPDATE users... " />
+            <marker date="1493271007599" expanded="true" signature="6730:6792" ph="SELECT * fro... movies" />
+            <marker date="1493271007599" expanded="true" signature="6941:7007" ph="SELECT * fro... users" />
+            <marker date="1493271007599" expanded="true" signature="7150:7213" ph="SELECT * fro... users" />
+            <marker date="1493271007599" expanded="true" signature="7309:7336" ph="drop table i... " />
+            <marker date="1493271007599" expanded="true" signature="7364:7451" ph="create table... status" />
+            <marker date="1493271007599" expanded="true" signature="7524:7545" ph="SELECT count... sd" />
+            <marker date="1493271007599" expanded="true" signature="7524:7561" ph="SELECT count... status" />
+            <marker date="1493271007599" expanded="true" signature="7631:7710" ph="insert into status... " />
           </folding>
         </state>
       </provider>
