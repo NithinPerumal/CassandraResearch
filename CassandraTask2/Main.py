@@ -229,7 +229,7 @@ def searchUserByPhone(phone):
 
 def createStatusTable():
     session.execute("""drop table if EXISTS status""")
-    session.execute("""create table status(identifier int PRIMARY KEY, username text, movie text, status text)""")
+    session.execute("""create table status(identifier text PRIMARY KEY, username text, EIDR text, duration text)""")
 
 createStatusTable()
 
@@ -238,20 +238,106 @@ def identifierValue():
 
 def addRentalData():
     global IDENTIFIER
-    session.execute("insert into status(identifier, username, movie, status) VALUES (%s, %s, %s, %s)",
-                    (IDENTIFIER, 'peruman', 'Up', 'rent'))
+    session.execute("insert into status(identifier, username, EIDR, duration) VALUES (%s, %s, %s, %s)",
+                    (str(IDENTIFIER), 'peruman', '3', '5'))
     IDENTIFIER = IDENTIFIER + 1
 
 addRentalData()
 
 # Rental Stuff
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
 
-def rentMovie(EIDR, duration):
-    print("rent movie")
+def checkMovie(EIDR, username, duration):
+    global IDENTIFIER
+    ret = session.execute("""SELECT eidr from streaming.movies where eidr='{0}'""".format(EIDR))
+    selectedEIDR = -1
+    for item in ret:
+        # print(item.eidr)
+        selectedEIDR = item.eidr
+
+    if selectedEIDR == -1:
+        print("There is no movie with that EIDR")
+        return False
+
+    ret = session.execute("""SELECT username from streaming.users where username='{0}'""".format(username))
+    selectedUsername = "Admin"
+    for item in ret:
+        selectedUsername = item.username
+
+    if selectedUsername == "Admin":
+        print("There is no user with that username")
+        return False
+
+    if not is_number(duration):
+        print("Duration is not a number of days")
+        return False
+
+    ret = session.execute("""Select eidr from streaming.status where username='{0}' ALLOW FILTERING""".format(username))
+    rentalList = []
+    for item in ret:
+        rentalList.append(item.eidr)
+
+    for thing in rentalList:
+        if EIDR == thing:
+            print("You have already rented or purchased that")
+            return False
+
+    return True
+
+def rentMovie(EIDR, username, duration):
+    global IDENTIFIER
+
+    if checkMovie(EIDR, username, duration):
+        session.execute("""INSERT into status(identifier, username, EIDR, duration) VALUES (%s, %s, %s, %s)""", (str(IDENTIFIER), username, EIDR, duration))
+        IDENTIFIER = IDENTIFIER + 1
+        return
+    else:
+        print("Something went wrong")
+        return
 
 
-def buyMovie(EIDR):
-    print("buy movie")
+
+def buyMovie(EIDR, username):
+    global IDENTIFIER
+
+    #Duration = -10 means the movie was purchased
+    if checkMovie(EIDR, username, '-10'):
+        session.execute("""INSERT into status(identifier, username, EIDR, duration) VALUES (%s, %s, %s, %s)""", (str(IDENTIFIER), username, EIDR, '-10'))
+        IDENTIFIER = IDENTIFIER + 1
+        return
+    else:
+        print("Something went wrong")
+        return
+
+def moviesRentedByUser(username):
+    ret = session.execute("""Select eidr, duration from streaming.status where username='{0}' ALLOW FILTERING""".format(username))
+    EIDRlist = []
+    durationList = []
+
+    for item in ret:
+        EIDRlist.append(item.eidr)
+        # print(item.duration)
+        # if int(item.duration) != -10:
+        durationList.append(item.duration)
+
+    i = 0
+    while i < len(durationList):
+        if int(durationList[i]) == -10:
+            del EIDRlist[i]
+        i = i + 1
+
+    for thing in EIDRlist:
+        answer = session.execute("""Select * from streaming.movies where eidr='{0}'""".format(thing))
+        print(answer.current_rows)
+
+def moviesOwnedByUser(username):
+    
+    return
 
 
 while True:
@@ -280,42 +366,42 @@ while True:
             print('Incorrect number of arguments')
     elif command == 'search by title':
         if len(inp) == 2:
-            print(searchMovieByTitle(inp[1]))
+            searchMovieByTitle(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'search by director':
         if len(inp) == 2:
-            print(searchMovieByDirector(inp[1]))
+            searchMovieByDirector(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'search by year':
         if len(inp) == 2:
-            print(searchMovieByYear(inp[1]))
+            searchMovieByYear(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'search by EIDR':
         if len(inp) == 2:
-            print(searchMovieByEIDR(inp[1]))
+            searchMovieByEIDR(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'sort by title':
         if len(inp) == 1:
-            print(sortByTitle())
+            sortByTitle()
         else:
             print('Incorrect number of arguments')
     elif command == 'sort by director':
         if len(inp) == 1:
-            print(sortByDirector())
+            sortByDirector()
         else:
             print('Incorrect number of arguments')
     elif command == 'sort by year':
         if len(inp) == 1:
-            print(sortByYear())
+            sortByYear()
         else:
             print('Incorrect number of arguments')
     elif command == 'sort by EIDR':
         if len(inp) == 1:
-            print(sortByEIDR())
+            sortByEIDR()
         else:
             print('Incorrect number of arguments')
     elif command == 'add user':
@@ -335,17 +421,32 @@ while True:
             print('Incorrect number of arguments')
     elif command == 'search users by name':
         if len(inp) == 2:
-            print(searchUserByName(inp[1]))
+            searchUserByName(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'search users by username':
         if len(inp) == 2:
-            print(searchUserByUsername(inp[1]))
+            searchUserByUsername(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'search users by phone':
         if len(inp) == 2:
-            print(searchUserByPhone(inp[1]))
+            searchUserByPhone(inp[1])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'rent':
+        if len(inp) == 4:
+            rentMovie(inp[1], inp[2], inp[3])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'buy':
+        if len(inp) == 3:
+            buyMovie(inp[1], inp[2])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'movies rented by':
+        if len(inp) == 2:
+            moviesRentedByUser(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'quit':
