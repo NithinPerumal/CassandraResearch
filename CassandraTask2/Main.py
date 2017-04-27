@@ -29,7 +29,6 @@ def printSomething():
 
 printSomething()
 
-
 def addMovie(title, director, year, EIDR):
     print("Add Movie")
     session.execute("insert into movies(title, director, year, EIDR) VALUES (%s, %s, %s, %s)",
@@ -188,6 +187,45 @@ def sortByEIDR():
     for item_obj in sortedTitles:
         print str(item_obj.get_title()), str(item_obj.get_director()), str(item_obj.get_year())
 
+"""USER STUFF"""
+# session.execute("""CREATE TYPE cc(card text, name text, csc text, date text)""")
+
+session.execute("""drop table if EXISTS users""")
+session.execute("""create table users(name text, username text PRIMARY KEY, phone text, address text)""")
+
+def addMoreData():
+    session.execute("insert into users(name, username, phone, address) VALUES (%s, %s, %s, %s)",
+                    ('Nithin Perumal', 'peruman', '4083688244', '1652 Vireo Avenue'))
+
+addMoreData()
+
+def addUser(name, username, phone, address):
+    session.execute("insert into users(name, username, phone, address) VALUES (%s, %s, %s, %s)",
+                    (name, username, phone, address))
+
+def removeUser(username):
+    print("remove user")
+    session.execute("""DELETE FROM users where username = '{0}'""".format(username))
+
+def editUser(name, username, phone, address):
+    print("Edit User")
+    session.execute("UPDATE users SET name='{0}', address='{1}', phone='{2}' where username='{3}' IF EXISTS".format(name, address, phone, username))
+
+def searchUserByName(name):
+    print("Search user by name")
+    ret = session.execute("""SELECT * from streaming.users where name='{0}' ALLOW FILTERING""".format(name))
+    print(ret.current_rows)
+
+def searchUserByUsername(username):
+    print("Search user by username")
+    ret = session.execute("""SELECT * from streaming.users where username='{0}' ALLOW FILTERING""".format(username))
+    print(ret.current_rows)
+
+def searchUserByPhone(phone):
+    print("Search user by name")
+    ret = session.execute("""SELECT * from streaming.users where phone='{0}' ALLOW FILTERING""".format(phone))
+    print(ret.current_rows)
+
 
 while True:
     inp = raw_input('command?').lstrip().split(',')
@@ -197,6 +235,7 @@ while True:
     command = inp[0]
     if command == 'print something':
         printSomething()
+        addMoreData()
     elif command == 'add movie':
         if len(inp) == 5:
             addMovie(inp[1], inp[2], inp[3], inp[4])
@@ -250,6 +289,36 @@ while True:
     elif command == 'sort by EIDR':
         if len(inp) == 1:
             print(sortByEIDR())
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'add user':
+        if len(inp) == 5:
+            addUser(inp[1], inp[2], inp[3], inp[4])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'remove user':
+        if len(inp) == 2:
+            removeUser(inp[1])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'edit user':
+        if len(inp) == 5:
+            editUser(inp[1], inp[2], inp[3], inp[4])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'search users by name':
+        if len(inp) == 2:
+            print(searchUserByName(inp[1]))
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'search users by username':
+        if len(inp) == 2:
+            print(searchUserByUsername(inp[1]))
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'search users by phone':
+        if len(inp) == 2:
+            print(searchUserByPhone(inp[1]))
         else:
             print('Incorrect number of arguments')
     elif command == 'quit':
