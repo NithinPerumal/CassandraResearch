@@ -300,8 +300,6 @@ def rentMovie(EIDR, username, duration):
         print("Something went wrong")
         return
 
-
-
 def buyMovie(EIDR, username):
     global IDENTIFIER
 
@@ -370,6 +368,36 @@ def moviesOwnedByUser(username):
     for thing in EIDRlist:
         answer = session.execute("""Select * from streaming.movies where eidr='{0}'""".format(thing))
         print(answer.current_rows)
+
+def whoRentedMovie(EIDR):
+    ret = session.execute("""SELECT eidr from streaming.movies where eidr='{0}'""".format(EIDR))
+    selectedEIDR = -1
+    for item in ret:
+        selectedEIDR = item.eidr
+
+    if selectedEIDR == -1:
+        print("There is no movie with that EIDR")
+        return
+
+    ret = session.execute("""Select username, duration from streaming.status where eidr='{0}' ALLOW FILTERING""".format(EIDR))
+    for item in ret:
+        if (int(item.duration) != -10):
+            print(item.username)
+
+def whoBoughtMovie(EIDR):
+    ret = session.execute("""SELECT eidr from streaming.movies where eidr='{0}'""".format(EIDR))
+    selectedEIDR = -1
+    for item in ret:
+        selectedEIDR = item.eidr
+
+    if selectedEIDR == -1:
+        print("There is no movie with that EIDR")
+        return
+
+    ret = session.execute("""Select username, duration from streaming.status where eidr='{0}' ALLOW FILTERING""".format(EIDR))
+    for item in ret:
+        if (int(item.duration) == -10):
+            print(item.username)
 
 
 while True:
@@ -484,6 +512,16 @@ while True:
     elif command == 'movies owned by':
         if len(inp) == 2:
             moviesOwnedByUser(inp[1])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'who rented':
+        if len(inp) == 2:
+            whoRentedMovie(inp[1])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'who bought':
+        if len(inp) == 2:
+            whoBoughtMovie(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'quit':
