@@ -315,14 +315,21 @@ def buyMovie(EIDR, username):
         return
 
 def moviesRentedByUser(username):
+    checkUsername = session.execute("""Select username from streaming.users where username='{}' ALLOW FILTERING""".format(username))
+    chck = ""
+    for item in checkUsername:
+        chck = item.username
+
+    if chck == "":
+        print("Username doesn't exist")
+        return
+
     ret = session.execute("""Select eidr, duration from streaming.status where username='{0}' ALLOW FILTERING""".format(username))
     EIDRlist = []
     durationList = []
 
     for item in ret:
         EIDRlist.append(item.eidr)
-        # print(item.duration)
-        # if int(item.duration) != -10:
         durationList.append(item.duration)
 
     i = 0
@@ -336,8 +343,33 @@ def moviesRentedByUser(username):
         print(answer.current_rows)
 
 def moviesOwnedByUser(username):
-    
-    return
+    checkUsername = session.execute("""Select username from streaming.users where username='{}' ALLOW FILTERING""".format(username))
+    chck = ""
+    for item in checkUsername:
+        chck = item.username
+
+    if chck == "":
+        print("Username doesn't exist")
+        return
+
+
+    ret = session.execute("""Select eidr, duration from streaming.status where username='{0}' ALLOW FILTERING""".format(username))
+    EIDRlist = []
+    durationList = []
+
+    for item in ret:
+        EIDRlist.append(item.eidr)
+        durationList.append(item.duration)
+
+    i = 0
+    while i < len(durationList):
+        if int(durationList[i]) != -10:
+            del EIDRlist[i]
+        i = i + 1
+
+    for thing in EIDRlist:
+        answer = session.execute("""Select * from streaming.movies where eidr='{0}'""".format(thing))
+        print(answer.current_rows)
 
 
 while True:
@@ -447,6 +479,11 @@ while True:
     elif command == 'movies rented by':
         if len(inp) == 2:
             moviesRentedByUser(inp[1])
+        else:
+            print('Incorrect number of arguments')
+    elif command == 'movies owned by':
+        if len(inp) == 2:
+            moviesOwnedByUser(inp[1])
         else:
             print('Incorrect number of arguments')
     elif command == 'quit':
