@@ -1,0 +1,24 @@
+I'M NOT SURE THIS CAN WORK IF EVERYTHING IS PUT IN SEPARATE TABLES - ATLEAST ... NOT AS A SIMPLE TASK
+
+CREATE SCHEMA songspace WITH replication = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 } and durable_writes = false;
+
+use songspace;
+
+CREATE TABLE Genre(
+Name text PRIMARY KEY,
+Characteristics set
+);
+
+CREATE TABLE Album(
+Identifier int
+Name text
+Artist text
+Genre text
+);
+
+CREATE TABLE Artist(
+Identifier int
+Solo boolean
+Name text
+);
+

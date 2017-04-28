@@ -18,8 +18,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="397" column="20" lean-forward="true" selection-start-line="397" selection-start-column="20" selection-end-line="397" selection-end-column="20" />
+            <state relative-caret-position="213">
+              <caret line="390" column="25" lean-forward="true" selection-start-line="390" selection-start-column="25" selection-end-line="390" selection-end-column="25" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
                 <element signature="e#501#1008#0" expanded="false" />
@@ -390,7 +390,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1055" extended-state="7" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05484558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -617,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="397" column="20" lean-forward="true" selection-start-line="397" selection-start-column="20" selection-end-line="397" selection-end-column="20" />
+        <state relative-caret-position="213">
+          <caret line="390" column="25" lean-forward="true" selection-start-line="390" selection-start-column="25" selection-end-line="390" selection-end-column="25" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
             <element signature="e#501#1008#0" expanded="false" />
