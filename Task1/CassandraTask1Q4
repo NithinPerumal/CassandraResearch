@@ -1,3 +1,0 @@
-Update songs set Album.artist = 'NewArtist' where Artist = 'Donald Fagen';
-Update songs set Artist = 'NewArtist' where Artist = 'Donald Fagen';
-

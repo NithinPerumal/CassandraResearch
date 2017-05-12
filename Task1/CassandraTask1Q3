@@ -1,5 +1,5 @@
 create index on songspace.songs (Album);
 
-Select Genre.characteristics from songspace.songs where Album = {name: 'The Nightfly', artist: 'Donald Fagen', genre: 'Fusion'} ALLOW FILTERING;
+Select Genre.characteristics from songspace.songs where song_name='Ruby Baby' ALLOW FILTERING;
 
-Select Genre.characteristics from songspace.songs where Album = {name: 'Mothership', artist: 'Led Zepplin', genre: 'Classic Rock'} ALLOW FILTERING;
+Select Genre.characteristics from songspace.songs where song_name='No Quarter[remastered]' ALLOW FILTERING;
